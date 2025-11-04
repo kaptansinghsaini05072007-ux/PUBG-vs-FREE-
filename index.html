@@ -138,11 +138,6 @@
                 <button type="submit" class="w-full bg-gradient-to-r from-primary to-secondary text-white py-4 rounded-xl font-bold text-lg hover:opacity-90 transition">
                     Sign Up Free
                 </button>
-                <p class="text-center mt-4">Or sign up with:</p>
-                <div class="flex justify-center space-x-4 mt-4">
-                    <button type="button" class="bg-blue-600 text-white p-3 rounded-full"><i class="fab fa-google"></i></button>
-                    <button type="button" class="bg-blue-800 text-white p-3 rounded-full"><i class="fab fa-facebook"></i></button>
-                </div>
             </form>
         </div>
     </div>
@@ -160,11 +155,6 @@
                 <button type="submit" class="w-full bg-gradient-to-r from-primary to-secondary text-white py-4 rounded-xl font-bold text-lg hover:opacity-90 transition">
                     Login Now
                 </button>
-                <p class="text-center mt-4">Or login with:</p>
-                <div class="flex justify-center space-x-4 mt-4">
-                    <button type="button" class="bg-blue-600 text-white p-3 rounded-full"><i class="fab fa-google"></i></button>
-                    <button type="button" class="bg-blue-800 text-white p-3 rounded-full"><i class="fab fa-facebook"></i></button>
-                </div>
             </form>
         </div>
     </div>
@@ -210,7 +200,6 @@
                                 <a href="#" onclick="showSection('history')" class="block px-6 py-3 hover:bg-light"><i class="fas fa-history mr-2"></i> History</a>
                                 <a href="#" onclick="showSection('deposit')" class="block px-6 py-3 hover:bg-light"><i class="fas fa-wallet mr-2"></i> Deposit</a>
                                 <a href="#" onclick="showSection('withdraw')" class="block px-6 py-3 hover:bg-light"><i class="fas fa-money-bill-wave mr-2"></i> Withdraw</a>
-                                <a href="#" class="block px-6 py-3 hover:bg-light"><i class="fas fa-shield-alt mr-2"></i> Privacy Policy</a>
                                 <a href="#" class="block px-6 py-3 hover:bg-light text-red-600" onclick="logout()"><i class="fas fa-sign-out-alt mr-2"></i> Logout</a>
                             </div>
                         </div>
@@ -244,129 +233,171 @@
             <h2 class="text-3xl font-heading text-center mb-8 text-primary">Choose a Room & Play!</h2>
             <p class="text-center text-gray-600 mb-8">Win 90% of pot | Only 10% platform fee</p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <!-- New Rooms: 10, 20, 30, 50, 100, 200, 500, 1000 -->
-                <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(10)">
+                <!-- 1v1 & 4v4 Rooms -->
+                <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(10, '1v1')">
                     <div class="text-center">
                         <i class="fas fa-gamepad text-5xl text-secondary mb-3 dice-roll"></i>
                         <p class="text-3xl font-bold text-primary">₹10</p>
                         <p class="text-sm text-gray-600">Entry Fee</p>
                         <p class="text-lg font-bold text-green-600 mt-2">Win ₹18</p>
+                        <p class="text-xs text-gray-500 mt-1">1v1</p>
+                        <p class="text-xs text-gray-500">4v4</p>
                     </div>
                 </div>
-                <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(20)">
+                <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(20, '1v1')">
                     <div class="text-center">
                         <i class="fas fa-gamepad text-5xl text-secondary mb-3 dice-roll"></i>
                         <p class="text-3xl font-bold text-primary">₹20</p>
                         <p class="text-sm text-gray-600">Entry Fee</p>
                         <p class="text-lg font-bold text-green-600 mt-2">Win ₹36</p>
+                        <p class="text-xs text-gray-500 mt-1">1v1</p>
+                        <p class="text-xs text-gray-500">4v4</p>
                     </div>
                 </div>
-                <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(30)">
+                <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(30, '1v1')">
                     <div class="text-center">
                         <i class="fas fa-gamepad text-5xl text-secondary mb-3 dice-roll"></i>
                         <p class="text-3xl font-bold text-primary">₹30</p>
                         <p class="text-sm text-gray-600">Entry Fee</p>
                         <p class="text-lg font-bold text-green-600 mt-2">Win ₹54</p>
+                        <p class="text-xs text-gray-500 mt-1">1v1</p>
+                        <p class="text-xs text-gray-500">4v4</p>
                     </div>
                 </div>
-                <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(50)">
+                <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(50, '1v1')">
                     <div class="text-center">
                         <i class="fas fa-gamepad text-5xl text-secondary mb-3 dice-roll"></i>
                         <p class="text-3xl font-bold text-primary">₹50</p>
                         <p class="text-sm text-gray-600">Entry Fee</p>
                         <p class="text-lg font-bold text-green-600 mt-2">Win ₹90</p>
+                        <p class="text-xs text-gray-500 mt-1">1v1</p>
+                        <p class="text-xs text-gray-500">4v4</p>
                     </div>
                 </div>
-                <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(100)">
+                <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(100, '1v1')">
                     <div class="text-center">
                         <i class="fas fa-gamepad text-5xl text-secondary mb-3 dice-roll"></i>
                         <p class="text-3xl font-bold text-primary">₹100</p>
                         <p class="text-sm text-gray-600">Entry Fee</p>
                         <p class="text-lg font-bold text-green-600 mt-2">Win ₹180</p>
+                        <p class="text-xs text-gray-500 mt-1">1v1</p>
+                        <p class="text-xs text-gray-500">4v4</p>
                     </div>
                 </div>
-                <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(200)">
+                <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(200, '1v1')">
                     <div class="text-center">
                         <i class="fas fa-gamepad text-5xl text-secondary mb-3 dice-roll"></i>
                         <p class="text-3xl font-bold text-primary">₹200</p>
                         <p class="text-sm text-gray-600">Entry Fee</p>
                         <p class="text-lg font-bold text-green-600 mt-2">Win ₹360</p>
+                        <p class="text-xs text-gray-500 mt-1">1v1</p>
+                        <p class="text-xs text-gray-500">4v4</p>
                     </div>
                 </div>
-                <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(500)">
+                <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(500, '1v1')">
                     <div class="text-center">
                         <i class="fas fa-gamepad text-5xl text-secondary mb-3 dice-roll"></i>
                         <p class="text-3xl font-bold text-primary">₹500</p>
                         <p class="text-sm text-gray-600">Entry Fee</p>
                         <p class="text-lg font-bold text-green-600 mt-2">Win ₹900</p>
+                        <p class="text-xs text-gray-500 mt-1">1v1</p>
+                        <p class="text-xs text-gray-500">4v4</p>
                     </div>
                 </div>
-                <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(1000)">
+                <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(1000, '1v1')">
                     <div class="text-center">
                         <i class="fas fa-crown text-5xl text-yellow-500 mb-3"></i>
                         <p class="text-3xl font-bold text-primary">₹1,000</p>
                         <p class="text-sm text-gray-600">VIP Room</p>
                         <p class="text-lg font-bold text-green-600 mt-2">Win ₹1,800</p>
+                        <p class="text-xs text-gray-500 mt-1">1v1</p>
+                        <p class="text-xs text-gray-500">4v4</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Erangel / Classic Mode -->
+            <div class="mt-16">
+                <h2 class="text-3xl font-heading text-center mb-8 text-primary">Erangel / Classic Mode</h2>
+                <p class="text-center text-gray-600 mb-8">Per Kill = 50% of Entry Fee</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="room-card bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinErangel(10)">
+                        <div class="text-center">
+                            <i class="fas fa-map text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹10</p>
+                            <p class="text-sm">Entry</p>
+                            <p class="text-lg font-bold mt-2">₹5 per kill</p>
+                        </div>
+                    </div>
+                    <div class="room-card bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinErangel(20)">
+                        <div class="text-center">
+                            <i class="fas fa-map text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹20</p>
+                            <p class="text-sm">Entry</p>
+                            <p class="text-lg font-bold mt-2">₹10 per kill</p>
+                        </div>
+                    </div>
+                    <div class="room-card bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinErangel(30)">
+                        <div class="text-center">
+                            <i class="fas fa-map text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹30</p>
+                            <p class="text-sm">Entry</p>
+                            <p class="text-lg font-bold mt-2">₹15 per kill</p>
+                        </div>
+                    </div>
+                    <div class="room-card bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinErangel(50)">
+                        <div class="text-center">
+                            <i class="fas fa-map text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹50</p>
+                            <p class="text-sm">Entry</p>
+                            <p class="text-lg font-bold mt-2">₹25 per kill</p>
+                        </div>
+                    </div>
+                    <div class="room-card bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinErangel(100)">
+                        <div class="text-center">
+                            <i class="fas fa-map text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹100</p>
+                            <p class="text-sm">Entry</p>
+                            <p class="text-lg font-bold mt-2">₹50 per kill</p>
+                        </div>
+                    </div>
+                    <div class="room-card bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinErangel(200)">
+                        <div class="text-center">
+                            <i class="fas fa-map text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹200</p>
+                            <p class="text-sm">Entry</p>
+                            <p class="text-lg font-bold mt-2">₹100 per kill</p>
+                        </div>
+                    </div>
+                    <div class="room-card bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinErangel(300)">
+                        <div class="text-center">
+                            <i class="fas fa-map text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹300</p>
+                            <p class="text-sm">Entry</p>
+                            <p class="text-lg font-bold mt-2">₹150 per kill</p>
+                        </div>
+                    </div>
+                    <div class="room-card bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinErangel(500)">
+                        <div class="text-center">
+                            <i class="fas fa-map text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹500</p>
+                            <p class="text-sm">Entry</p>
+                            <p class="text-lg font-bold mt-2">₹250 per kill</p>
+                        </div>
+                    </div>
+                    <div class="room-card bg-gradient-to-br from-yellow-500 to-red-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer col-span-2 md:col-span-1" onclick="joinErangel(1000)">
+                        <div class="text-center">
+                            <i class="fas fa-crown text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹1,000</p>
+                            <p class="text-sm">VIP</p>
+                            <p class="text-lg font-bold mt-2">₹500 per kill</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Deposit Section -->
-        <div id="depositSection" class="hidden max-w-2xl mx-auto px-4 py-16">
-            <div class="bg-white p-8 rounded-3xl shadow-xl">
-                <h2 class="text-3xl font-heading text-primary mb-6 text-center">Add Money to Wallet</h2>
-                <div class="bg-light p-6 rounded-2xl mb-6 text-center">
-                    <p class="text-lg font-bold mb-2">UPI ID:</p>
-                    <p class="text-2xl font-mono text-primary select-all">millnerkaptan01@fam</p>
-                </div>
-                <div class="text-center">
-                    <p class="mb-4">After payment, send screenshot here for confirmation:</p>
-                    <a href="https://wa.me/qr/F4GQCVUACU7DJ1" target="_blank" class="inline-flex items-center bg-green-500 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-green-600 transition">
-                        <i class="fab fa-whatsapp mr-2 text-2xl"></i> Send on WhatsApp
-                    </a>
-                </div>
-                <div class="mt-8 grid grid-cols-3 gap-4 text-center">
-                    <button onclick="quickAdd(100)" class="bg-secondary text-white py-3 rounded-xl font-bold hover:scale-105 transition">₹100</button>
-                    <button onclick="quickAdd(500)" class="bg-secondary text-white py-3 rounded-xl font-bold hover:scale-105 transition">₹500</button>
-                    <button onclick="quickAdd(1000)" class="bg-secondary text-white py-3 rounded-xl font-bold hover:scale-105 transition">₹1,000</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Withdraw Section -->
-        <div id="withdrawSection" class="hidden max-w-2xl mx-auto px-4 py-16">
-            <div class="bg-white p-8 rounded-3xl shadow-xl">
-                <h2 class="text-3xl font-heading text-primary mb-6 text-center">Withdraw Winnings</h2>
-                <p class="text-center text-gray-600 mb-6">Withdrawal processed within 24 hours</p>
-                <div class="text-center">
-                    <p class="mb-4">Click below to send details on WhatsApp:</p>
-                    <p class="text-sm text-gray-600 mb-4">Include: Account Number, IFSC, Amount</p>
-                   655 <a href="https://wa.me/qr/F4GQCVUACU7DJ1" target="_blank" class="inline-flex items-center bg-green-500 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-green-600 transition">
-                        <i class="fab fa-whatsapp mr-2 text-2xl"></i> Withdraw via WhatsApp
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- History Section -->
-        <div id="historySection" class="hidden max-w-7xl mx-auto px-4 py-16">
-            <div class="bg-white rounded-3xl shadow-xl p-8">
-                <h2 class="text-3xl font-heading text-primary mb-6">Transaction & Game History</h2>
-                <div class="space-y-4">
-                    <div class="border-b pb-4">
-                        <p class="font-bold text-green-600">+₹900 <span class="text-sm text-gray-600 float-right">15 Mar 2025, 2:30 PM</span></p>
-                        <p class="text-sm">Game Win - Room ₹500</p>
-                    </div>
-                    <div class="border-b pb-4">
-                        <p class="font-bold text-red-600">-₹500 <span class="text-sm text-gray-600 float-right">15 Mar 2025, 2:00 PM</span></p>
-                        <p class="text-sm">Deposit via UPI</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Admin Panel Section -->
+        <!-- Admin Panel -->
         <div id="adminSection" class="hidden max-w-6xl mx-auto px-4 py-16">
             <div class="bg-white rounded-3xl shadow-xl p-8">
                 <h2 class="text-3xl font-heading text-primary mb-6 text-center">Admin Panel</h2>
@@ -376,25 +407,12 @@
                 <div class="mb-6">
                     <h3 class="text-xl font-bold mb-4">Add Funds to User</h3>
                     <div class="flex gap-4 mb-4">
-                        <input type="text" id="adminUserEmail" placeholder="User Email" class="flex-1 p-3 border rounded-xl">
+                        <input type="email" id="adminUserEmail" placeholder="User Email" class="flex-1 p-3 border rounded-xl">
                         <input type="number" id="adminFundAmount" placeholder="Amount" class="w-32 p-3 border rounded-xl">
                         <button onclick="addFundToUser()" class="bg-green-500 text-white px-6 py-3 rounded-xl font-bold">Add Funds</button>
                     </div>
                 </div>
-                <div class="mb-6">
-                    <h3 class="text-xl font-bold mb-4">Complete Withdrawal</h3>
-                    <div class="flex gap-4 mb-4">
-                        <input type="text" id="adminWithdrawEmail" placeholder="User Email" class="flex-1 p-3 border rounded-xl">
-                        <input type="number" id="adminWithdrawAmount" placeholder="Amount" class="w-32 p-3 border rounded-xl">
-                        <button onclick="completeWithdrawal()" class="bg-blue-500 text-white px-6 py-3 rounded-xl font-bold">Complete</button>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">User List</h3>
-                    <div id="adminUserList" class="space-y-4 max-h-96 overflow-y-auto">
-                        <!-- Users will load here -->
-                    </div>
-                </div>
+                <div id="adminUserList" class="space-y-4 max-h-96 overflow-y-auto"></div>
             </div>
         </div>
     </div>
@@ -409,25 +427,19 @@
 
     <!-- JavaScript -->
     <script>
-        // Global users array and current user
         let currentUser = null;
-        let users = JSON.parse(localStorage.getItem('ludoUsers') || '[]'); // Reuse key for compatibility
+        let users = JSON.parse(localStorage.getItem('ludoUsers') || '[]');
         let isAdmin = false;
 
-        // Show modals
         function showSignup() { document.getElementById('signupModal').classList.remove('hidden'); }
         function showLogin() { document.getElementById('loginModal').classList.remove('hidden'); }
-        function closeModals() {
-            document.getElementById('signupModal').classList.add('hidden');
-            document.getElementById('loginModal').classList.add('hidden');
-        }
-
-        // Admin Login
+        function closeModals() { document.getElementById('signupModal').classList.add('hidden'); document.getElementById('loginModal').classList.add('hidden'); }
         function showAdminLogin() { document.getElementById('adminLoginModal').classList.remove('hidden'); }
         function closeAdminModal() { document.getElementById('adminLoginModal').classList.add('hidden'); }
+
         function handleAdminLogin(e) {
             e.preventDefault();
-            const email = document.getElementById('adminEmail').value.trim();
+            const email = document.getElementById('adminEmail').value.trim().toLowerCase();
             const pass = document.getElementById('adminPass').value;
             if (email === 'admin@example.com' && pass === 'admin123') {
                 isAdmin = true;
@@ -442,7 +454,6 @@
             }
         }
 
-        // Handle Signup
         function handleSignup(e) {
             e.preventDefault();
             const name = document.getElementById('signupName').value.trim();
@@ -452,22 +463,13 @@
 
             if (users.find(u => u.email === email)) return alert('Email already exists!');
 
-            const user = {
-                name, email, phone, pass,
-                username: email.split('@')[0],
-                joinDate: new Date().toLocaleDateString('en-GB'),
-                balance: 0,
-                lastSeen: 'just now',
-                withdrawals: []
-            };
-
+            const user = { name, email, phone, pass, username: email.split('@')[0], joinDate: new Date().toLocaleDateString('en-GB'), balance: 0, lastSeen: 'just now', withdrawals: [] };
             users.push(user);
             saveUsers();
             localStorage.setItem('currentUser', JSON.stringify(user));
             loginSuccess(user);
         }
 
-        // Handle Login
         function handleLogin(e) {
             e.preventDefault();
             const email = document.getElementById('loginEmail').value.trim().toLowerCase();
@@ -479,17 +481,15 @@
                 localStorage.setItem('currentUser', JSON.stringify(user));
                 loginSuccess(user);
             } else {
-                alert('Invalid credentials');
+                alert('Invalid email or password');
             }
         }
 
-        // Login Success
         function loginSuccess(user) {
             currentUser = user;
             closeModals();
             document.getElementById('landingPage').classList.add('hidden');
             document.getElementById('dashboard').classList.remove('hidden');
-
             document.getElementById('dashUsername').textContent = user.username;
             document.getElementById('welcomeUser').textContent = user.username;
             document.getElementById('joinDate').textContent = user.joinDate;
@@ -497,26 +497,20 @@
             updateLastSeen();
         }
 
-        // Save users to localStorage
         function saveUsers() {
             localStorage.setItem('ludoUsers', JSON.stringify(users));
         }
 
-        // Check if already logged in
         window.onload = () => {
             const saved = localStorage.getItem('currentUser');
             if (saved) {
                 const user = JSON.parse(saved);
-                if (users.find(u => u.email === user.email)) {
-                    loginSuccess(user);
-                }
+                const found = users.find(u => u.email === user.email);
+                if (found) loginSuccess(found);
             }
-            if (localStorage.getItem('adminLoggedIn') === 'true') {
-                isAdmin = true;
-            }
+            if (localStorage.getItem('adminLoggedIn') === 'true') isAdmin = true;
         };
 
-        // Logout
         function logout() {
             localStorage.removeItem('currentUser');
             localStorage.removeItem('adminLoggedIn');
@@ -524,47 +518,38 @@
             location.reload();
         }
 
-        // Toggle Menu
-        function toggleMenu() {
-            document.getElementById('menuDropdown').classList.toggle('hidden');
-        }
+        function toggleMenu() { document.getElementById('menuDropdown').classList.toggle('hidden'); }
 
-        // Show Section
         function showSection(section) {
-            document.querySelectorAll('#dashboard > div').forEach(div => {
-                div.classList.add('hidden');
-            });
+            document.querySelectorAll('#dashboard > div').forEach(div => div.classList.add('hidden'));
             document.getElementById(section + 'Section').classList.remove('hidden');
-            if (section === 'admin' && isAdmin) {
-                updateTotalUsers();
-                loadAdminUsers();
-            }
+            if (section === 'admin' && isAdmin) { updateTotalUsers(); loadAdminUsers(); }
             toggleMenu();
         }
 
-        // Join Room
-        function joinRoom(amount) {
+        function joinRoom(amount, mode) {
             if (!currentUser) { showLogin(); return; }
-            if (currentUser.balance < amount) {
-                alert('Insufficient balance! Please add money.');
-                showSection('deposit');
-                return;
-            }
-            if (confirm(`Join ₹${amount} room? Entry fee will be deducted.`)) {
+            if (currentUser.balance < amount) { alert('Insufficient balance!'); showSection('deposit'); return; }
+            if (confirm(`Join ₹${amount} ${mode} room?`)) {
                 currentUser.balance -= amount;
-                const winAmount = amount * 1.8;
-                alert(`Room joined! Play and win up to ₹${winAmount}!`);
+                const win = amount * 1.8;
+                alert(`Joined ${mode} room! Win up to ₹${win}`);
                 updateBalance();
                 window.open('https://wa.me/qr/F4GQCVUACU7DJ1', '_blank');
             }
         }
 
-        // Quick Add
-        function quickAdd(amount) {
-            alert(`Pay ₹${amount} to UPI: millnerkaptan01@fam\nThen send screenshot on WhatsApp.`);
+        function joinErangel(amount) {
+            if (!currentUser) { showLogin(); return; }
+            if (currentUser.balance < amount) { alert('Insufficient balance!'); showSection('deposit'); return; }
+            if (confirm(`Join Erangel ₹${amount} room? (₹${amount/2} per kill)`)) {
+                currentUser.balance -= amount;
+                alert(`Joined Erangel! ₹${amount/2} per kill.`);
+                updateBalance();
+                window.open('https://wa.me/qr/F4GQCVUACU7DJ1', '_blank');
+            }
         }
 
-        // Update Balance
         function updateBalance() {
             if (currentUser) {
                 document.getElementById('walletBalance').textContent = `₹${currentUser.balance}`;
@@ -573,23 +558,17 @@
             }
         }
 
-        // Update Last Seen
         function updateLastSeen() {
             setInterval(() => {
-                if (currentUser) {
-                    document.getElementById('lastSeen').textContent = 'Last seen: just now';
-                }
+                if (currentUser) document.getElementById('lastSeen').textContent = 'Last seen: just now';
             }, 30000);
         }
 
-        // Auto hide menu
         document.addEventListener('click', (e) => {
-            if (!e.target.closest('nav')) {
-                document.getElementById('menuDropdown').classList.add('hidden');
-            }
+            if (!e.target.closest('nav')) document.getElementById('menuDropdown').classList.add('hidden');
         });
 
-        // === ADMIN PANEL FUNCTIONS ===
+        // ADMIN PANEL
         function updateTotalUsers() {
             document.getElementById('totalUsers').textContent = users.length;
         }
@@ -602,10 +581,9 @@
                 div.className = 'p-4 border rounded-xl bg-gray-50';
                 div.innerHTML = `
                     <p><strong>${user.username}</strong> (${user.email}) - Balance: ₹${user.balance}</p>
-                    <div class="flex gap-2 mt-2 flex-wrap">
+                    <div class="flex gap-2 mt-2">
                         <input type="number" placeholder="Amount" class="p-2 border rounded w-24" min="1">
                         <button onclick="addFund('${user.email}', this.previousElementSibling.value)" class="bg-green-500 text-white px-3 py-1 rounded text-sm">Add</button>
-                        <button onclick="completeUserWithdrawal('${user.email}', this.parentNode.querySelector('input').value)" class="bg-blue-500 text-white px-3 py-1 rounded text-sm">Withdraw</button>
                     </div>
                 `;
                 container.appendChild(div);
@@ -623,32 +601,10 @@
             const amt = parseFloat(amountStr);
             if (isNaN(amt) || amt <= 0) return alert('Enter valid amount');
             const user = users.find(u => u.email === email);
-            if (!user) return alert('User not found! Check email.');
+            if (!user) return alert('User not found! Check email spelling.');
             user.balance += amt;
             saveUsers();
             alert(`₹${amt} added to ${user.username}. New balance: ₹${user.balance}`);
-            loadAdminUsers();
-            if (currentUser && currentUser.email === email) updateBalance();
-        }
-
-        function completeWithdrawal() {
-            const email = document.getElementById('adminWithdrawEmail').value.trim().toLowerCase();
-            const amount = parseFloat(document.getElementById('adminWithdrawAmount').value);
-            if (!email || !amount) return alert('Enter email and amount');
-            completeUserWithdrawal(email, amount);
-        }
-
-        function completeUserWithdrawal(email, amountStr) {
-            const amt = parseFloat(amountStr);
-            if (isNaN(amt) || amt <= 0) return alert('Enter valid amount');
-            const user = users.find(u => u.email === email);
-            if (!user) return alert('User not found! Check email.');
-            if (user.balance < amt) return alert('Insufficient balance!');
-            user.balance -= amt;
-            if (!user.withdrawals) user.withdrawals = [];
-            user.withdrawals.push({ amount: amt, date: new Date().toISOString(), status: 'completed' });
-            saveUsers();
-            alert(`₹${amt} withdrawal completed for ${user.username}.`);
             loadAdminUsers();
             if (currentUser && currentUser.email === email) updateBalance();
         }
