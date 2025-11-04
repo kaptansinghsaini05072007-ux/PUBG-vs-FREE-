@@ -131,7 +131,7 @@
                 <button onclick="closeModals()" class="text-2xl">×</button>
             </div>
             <form onsubmit="handleSignup(event)">
-                <input type="text" id="signupName" placeholder="Full Name" class="w-full p-4 mb-4 border-2 border-secondary rounded-xl focus:border-primary outline-none" required>
+                <input type="text" id="signupName" placeholder="Full Name" class="w-full p-4 mb-4uruh-4 border-2 border-secondary rounded-xl focus:border-primary outline-none" required>
                 <input type="email" id="signupEmail" placeholder="Email" class="w-full p-4 mb-4 border-2 border-secondary rounded-xl focus:border-primary outline-none" required>
                 <input type="tel" id="signupPhone" placeholder="Phone (10 digits)" class="w-full p-4 mb-4 border-2 border-secondary rounded-xl focus:border-primary outline-none" pattern="[0-9]{10}" required>
                 <input type="password" id="signupPass" placeholder="Password" class="w-full p-4 mb-6 border-2 border-secondary rounded-xl focus:border-primary outline-none" required>
@@ -215,7 +215,7 @@
                     <div>
                         <p class="text-sm opacity-90">Welcome back,</p>
                         <p class="text-2xl font-bold" id="welcomeUser">Player123</p>
-                        <p class="text-sm">Joined: <span id="joinDate">15 Mar 2025</span></p>
+                        <p class="text-sm"> Sensored: <span id="joinDate">15 Mar 2025</span></p>
                     </div>
                     <div class="text-right">
                         <p class="text-sm opacity-90">Wallet Balance</p>
@@ -256,7 +256,7 @@
                 </div>
                 <div class="room-card bg-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinRoom(30, '1v1')">
                     <div class="text-center">
-                         <i class="fas fa-gamepad text-5xl text-secondary mb-3 dice-roll"></i>
+                        <i class="fas fa-gamepad text-5xl text-secondary mb-3 dice-roll"></i>
                         <p class="text-3xl font-bold text-primary">₹30</p>
                         <p class="text-sm text-gray-600">Entry Fee</p>
                         <p class="text-lg font-bold text-green-600 mt-2">Win ₹54</p>
@@ -322,13 +322,101 @@
                 <p class="text-center text-gray-600 mb-8">Per Kill = 50% of Entry Fee</p>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                     <div class="room-card bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinErangel(10)">
-                        <!-- Add more rooms here if needed -->
+                        <div class="text-center">
+                            <i class="fas fa-map text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹10</p>
+                            <p class="text-sm">Entry</p>
+                            <p class="text-lg font-bold mt-2">₹5 per kill</p>
+                        </div>
+                    </div>
+                    <div class="room-card bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinErangel(20)">
+                        <div class="text-center">
+                            <i class="fas fa-map text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹20</p>
+                            <p class="text-sm">Entry</p>
+                            <p class="text-lg font-bold mt-2">₹10 per kill</p>
+                        </div>
+                    </div>
+                    <div class="room-card bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinErangel(30)">
+                        <div class="text-center">
+                            <i class="fas fa-map text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹30</p>
+                            <p class="text-sm">Entry</p>
+                            <p class="text-lg font-bold mt-2">₹15 per kill</p>
+                        </div>
+                    </div>
+                    <div class="room-card bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinErangel(50)">
+                        <div class="text-center">
+                            <i class="fas fa-map text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹50</p>
+                            <p class="text-sm">Entry</p>
+                            <p class="text-lg font-bold mt-2">₹25 per kill</p>
+                        </div>
+                    </div>
+                    <div class="room-card bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinErangel(100)">
+                        <div class="text-center">
+                            <i class="fas fa-map text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹100</p>
+                            <p class="text-sm">Entry</p>
+                            <p class="text-lg font-bold mt-2">₹50 per kill</p>
+                        </div>
+                    </div>
+                    <div class="room-card bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinErangel(200)">
+                        <div class="text-center">
+                            <i class="fas fa-map text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹200</p>
+                            <p class="text-sm">Entry</p>
+                            <p class="text-lg font-bold mt-2">₹100 per kill</p>
+                        </div>
+                    </div>
+                    <div class="room-card bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinErangel(300)">
+                        <div class="text-center">
+                            <i class="fas fa-map text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹300</p>
+                            <p class="text-sm">Entry</p>
+                            <p class="text-lg font-bold mt-2">₹150 per kill</p>
+                        </div>
+                    </div>
+                    <div class="room-card bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer" onclick="joinErangel(500)">
+                        <div class="text-center">
+                            <i class="fas fa-map text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹500</p>
+                            <p class="text-sm">Entry</p>
+                            <p class="text-lg font-bold mt-2">₹250 per kill</p>
+                        </div>
+                    </div>
+                    <div class="room-card bg-gradient-to-br from-yellow-500 to-red-600 text-white p-6 rounded-3xl shadow-lg card-hover cursor-pointer col-span-2 md:col-span-1" onclick="joinErangel(1000)">
+                        <div class="text-center">
+                            <i class="fas fa-crown text-5xl mb-3"></i>
+                            <p class="text-3xl font-bold">₹1,000</p>
+                            <p class="text-sm">VIP</p>
+                            <p class="text-lg font-bold mt-2">₹500 per kill</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Deposit Section -->
+        <!-- Admin Panel -->
+        <div id="adminSection" class="hidden max-w-6xl mx-auto px-4 py-16">
+            <div class="bg-white rounded-3xl shadow-xl p-8">
+                <h2 class="text-3xl font-heading text-primary mb-6 text-center">Admin Panel</h2>
+                <div class="mb-6 p-4 bg-light rounded-xl text-center">
+                    <p class="text-xl font-bold">Total Registered Users: <span id="totalUsers">0</span></p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold mb-4">Add Funds to User</h3>
+                    <div class="flex gap-4 mb-4">
+                        <input type="email" id="adminUserEmail" placeholder="User Email" class="flex-1 p-3 border rounded-xl">
+                        <input type="number" id="adminFundAmount" placeholder="Amount" class="w-32 p-3 border rounded-xl">
+                        <button onclick="addFundToUser()" class="bg-green-500 text-white px-6 py-3 rounded-xl font-bold">Add Funds</button>
+                    </div>
+                </div>
+                <div id="adminUserList" class="space-y-4 max-h-96 overflow-y-auto"></div>
+            </div>
+        </div>
+
+        <!-- DEPOSIT SECTION (ADDED) -->
         <div id="depositSection" class="hidden max-w-4xl mx-auto px-4 py-10">
             <div class="bg-white p-8 rounded-3xl shadow-xl">
                 <h2 class="text-3xl font-heading text-primary text-center mb-6">Deposit Money</h2>
@@ -339,7 +427,7 @@
             </div>
         </div>
 
-        <!-- Withdraw Section -->
+        <!-- WITHDRAW SECTION (ADDED) -->
         <div id="withdrawSection" class="hidden max-w-4xl mx-auto px-4 py-10">
             <div class="bg-white p-8 rounded-3xl shadow-xl">
                 <h2 class="text-3xl font-heading text-primary text-center mb-6">Withdraw Money</h2>
@@ -361,34 +449,57 @@
                 </button>
             </div>
         </div>
-
     </div>
 
-    <script>
-        // GLOBAL DATA (Sync across devices)
-        let users = JSON.parse(localStorage.getItem('GLOBAL_USERS') || '[]');
-        let currentUser = null;
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-10 mt-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="mb-4">© 2025 Free Fire & PUBG. All rights reserved.</p>
+            <p class="text-sm">Play responsibly. 18+ only.</p>
+        </div>
+    </footer>
 
-        function saveGlobal() {
-            localStorage.setItem('GLOBAL_USERS', JSON.stringify(users));
-        }
+    <!-- JavaScript -->
+    <script>
+        let currentUser = null;
+        let users = JSON.parse(localStorage.getItem('ludoUsers') || '[]');
+        let isAdmin = false;
 
         function showSignup() { document.getElementById('signupModal').classList.remove('hidden'); }
         function showLogin() { document.getElementById('loginModal').classList.remove('hidden'); }
+        function closeModals() { document.getElementById('signupModal').classList.add('hidden'); document.getElementById('loginModal').classList.add('hidden'); }
         function showAdminLogin() { document.getElementById('adminLoginModal').classList.remove('hidden'); }
-        function closeModals() { ['signupModal','loginModal','adminLoginModal'].forEach(id => document.getElementById(id)?.classList.add('hidden')); }
+        function closeAdminModal() { document.getElementById('adminLoginModal').classList.add('hidden'); }
+
+        function handleAdminLogin(e) {
+            e.preventDefault();
+            const email = document.getElementById('adminEmail').value.trim().toLowerCase();
+            const pass = document.getElementById('adminPass').value;
+            if (email === 'admin@example.com' && pass === 'admin123') {
+                isAdmin = true;
+                localStorage.setItem('adminLoggedIn', 'true');
+                closeAdminModal();
+                showSection('admin');
+                updateTotalUsers();
+                loadAdminUsers();
+                alert('Admin login successful!');
+            } else {
+                alert('Invalid admin credentials');
+            }
+        }
 
         function handleSignup(e) {
             e.preventDefault();
+            const name = document.getElementById('signupName').value.trim();
             const email = document.getElementById('signupEmail').value.trim().toLowerCase();
+            const phone = document.getElementById('signupPhone').value;
+            const pass = document.getElementById('signupPass').value;
+
             if (users.find(u => u.email === email)) return alert('Email already exists!');
-            const user = {
-                name: document.getElementById('signupName').value,
-                email, phone: document.getElementById('signupPhone').value,
-                pass: document.getElementById('signupPass').value,
-                username: email.split('@')[0], balance: 0, joinDate: new Date().toLocaleDateString('en-GB')
-            };
-            users.push(user); saveGlobal(); 
+
+            const user = { name, email, phone, pass, username: email.split('@')[0], joinDate: new Date().toLocaleDateString('en-GB'), balance: 0, lastSeen: 'just now', withdrawals: [] };
+            users.push(user);
+            saveUsers();
             localStorage.setItem('currentUser', JSON.stringify(user));
             loginSuccess(user);
         }
@@ -397,57 +508,143 @@
             e.preventDefault();
             const email = document.getElementById('loginEmail').value.trim().toLowerCase();
             const pass = document.getElementById('loginPass').value;
-            users = JSON.parse(localStorage.getItem('GLOBAL_USERS') || '[]');
+
             const user = users.find(u => u.email === email && u.pass === pass);
-            if (user) { localStorage.setItem('currentUser', JSON.stringify(user)); loginSuccess(user); }
-            else alert('Wrong email or password');
-        }
-
-        function handleAdminLogin(e) {
-            e.preventDefault();
-            if (document.getElementById('adminEmail').value === 'admin@example.com' && document.getElementById('adminPass').value === 'admin123') {
-                alert('Admin Login Success!');
-                closeModals();
-            } else alert('Wrong admin credentials');
-        }
-
-        function loginSuccess(user) {
-            currentUser = user; closeModals();
-            document.getElementById('landingPage').classList.add('hidden');
-            document.getElementById('dashboard').classList.remove('hidden');
-            ['dashUsername','welcomeUser'].forEach(id => document.getElementById(id).textContent = user.username);
-            document.getElementById('walletBalance').textContent = '₹' + user.balance;
-            document.getElementById('joinDate').textContent = user.joinDate;
-        }
-
-        function updateBalance() {
-            if (currentUser) {
-                document.getElementById('walletBalance').textContent = '₹' + currentUser.balance;
-                saveGlobal();
-                localStorage.setItem('currentUser', JSON.stringify(currentUser));
+            if (user) {
+                user.lastSeen = 'just now';
+                localStorage.setItem('currentUser', JSON.stringify(user));
+                loginSuccess(user);
+            } else {
+                alert('Invalid email or password');
             }
         }
 
+        function loginSuccess(user) {
+            currentUser = user;
+            closeModals();
+            document.getElementById('landingPage').classList.add('hidden');
+            document.getElementById('dashboard').classList.remove('hidden');
+            document.getElementById('dashUsername').textContent = user.username;
+            document.getElementById('welcomeUser').textContent = user.username;
+            document.getElementById('joinDate').textContent = user.joinDate;
+            document.getElementById('walletBalance').textContent = `₹${user.balance}`;
+            updateLastSeen();
+        }
+
+        function saveUsers() {
+            localStorage.setItem('ludoUsers', JSON.stringify(users));
+        }
+
         window.onload = () => {
-            users = JSON.parse(localStorage.getItem('GLOBAL_USERS') || '[]');
             const saved = localStorage.getItem('currentUser');
             if (saved) {
                 const user = JSON.parse(saved);
                 const found = users.find(u => u.email === user.email);
                 if (found) loginSuccess(found);
             }
+            if (localStorage.getItem('adminLoggedIn') === 'true') isAdmin = true;
         };
 
-        function logout() { localStorage.removeItem('currentUser'); location.reload(); }
-        function toggleMenu() { document.getElementById('menuDropdown').classList.toggle('hidden'); }
-
-        function showSection(sec) {
-            document.querySelectorAll('#dashboard > div').forEach(d => d.classList.add('hidden'));
-            const target = sec + 'Section';
-            document.getElementById(target)?.classList.remove('hidden');
-            if (sec === 'withdraw') toggleWithdrawFields();
+        function logout() {
+            localStorage.removeItem('currentUser');
+            localStorage.removeItem('adminLoggedIn');
+            isAdmin = false;
+            location.reload();
         }
 
+        function toggleMenu() { document.getElementById('menuDropdown').classList.toggle('hidden'); }
+
+        function showSection(section) {
+            document.querySelectorAll('#dashboard > div').forEach(div => div.classList.add('hidden'));
+            document.getElementById(section + 'Section').classList.remove('hidden');
+            if (section === 'admin' && isAdmin) { updateTotalUsers(); loadAdminUsers(); }
+            if (section === 'withdraw') toggleWithdrawFields();
+            toggleMenu();
+        }
+
+        function joinRoom(amount, mode) {
+            if (!currentUser) { showLogin(); return; }
+            if (currentUser.balance < amount) { alert('Insufficient balance!'); showSection('deposit'); return; }
+            if (confirm(`Join ₹${amount} ${mode} room?`)) {
+                currentUser.balance -= amount;
+                const win = amount * 1.8;
+                alert(`Joined ${mode} room! Win up to ₹${win}`);
+                updateBalance();
+                window.open('https://wa.me/qr/F4GQCVUACU7DJ1', '_blank');
+            }
+        }
+
+        function joinErangel(amount) {
+            if (!currentUser) { showLogin(); return; }
+            if (currentUser.balance < amount) { alert('Insufficient balance!'); showSection('deposit'); return; }
+            if (confirm(`Join Erangel ₹${amount} room? (₹${amount/2} per kill)`)) {
+                currentUser.balance -= amount;
+                alert(`Joined Erangel! ₹${amount/2} per kill.`);
+                updateBalance();
+                window.open('https://wa.me/qr/F4GQCVUACU7DJ1', '_blank');
+            }
+        }
+
+        function updateBalance() {
+            if (currentUser) {
+                document.getElementById('walletBalance').textContent = `₹${currentUser.balance}`;
+                localStorage.setItem('currentUser', JSON.stringify(currentUser));
+                saveUsers();
+            }
+        }
+
+        function updateLastSeen() {
+            setInterval(() => {
+                if (currentUser) document.getElementById('lastSeen').textContent = 'Last seen: just now';
+            }, 30000);
+        }
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) document.getElementById('menuDropdown').classList.add('hidden');
+        });
+
+        // ADMIN PANEL
+        function updateTotalUsers() {
+            document.getElementById('totalUsers').textContent = users.length;
+        }
+
+        function loadAdminUsers() {
+            const container = document.getElementById('adminUserList');
+            container.innerHTML = '';
+            users.forEach(user => {
+                const div = document.createElement('div');
+                div.className = 'p-4 border rounded-xl bg-gray-50';
+                div.innerHTML = `
+                    <p><strong>${user.username}</strong> (${user.email}) - Balance: ₹${user.balance}</p>
+                    <div class="flex gap-2 mt-2">
+                        <input type="number" placeholder="Amount" class="p-2 border rounded w-24" min="1">
+                        <button onclick="addFund('${user.email}', this.previousElementSibling.value)" class="bg-green-500 text-white px-3 py-1 rounded text-sm">Add</button>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function addFundToUser() {
+            const email = document.getElementById('adminUserEmail').value.trim().toLowerCase();
+            const amount = parseFloat(document.getElementById('adminFundAmount').value);
+            if (!email || !amount) return alert('Enter email and amount');
+            addFund(email, amount);
+        }
+
+        function addFund(email, amountStr) {
+            const amt = parseFloat(amountStr);
+            if (isNaN(amt) || amt <= 0) return alert('Enter valid amount');
+            const user = users.find(u => u.email === email);
+            if (!user) return alert('User not found! Check email spelling.');
+            user.balance += amt;
+            saveUsers();
+            alert(`₹${amt} added to ${user.username}. New balance: ₹${user.balance}`);
+            loadAdminUsers();
+            if (currentUser && currentUser.email === email) updateBalance();
+        }
+
+        // DEPOSIT & WITHDRAW FUNCTIONS
         function toggleWithdrawFields() {
             const method = document.getElementById('withdrawMethod').value;
             document.getElementById('upiField').classList.toggle('hidden', method !== 'upi');
@@ -457,7 +654,7 @@
         function sendDepositToWhatsApp() {
             const amt = document.getElementById('depositAmount').value;
             if (!amt || amt < 10) return alert('Enter amount ≥ ₹10');
-            const msg = `DEPOSIT REQUEST\nUser: ${currentUser.username}\nEmail: ${currentUser.email}\nAmount: ₹${amt}`;
+            const msg = `DEPOSIT REQUEST\nUser: ${currentData.currentUser.username}\nEmail: ${currentUser.email}\nAmount: ₹${amt}`;
             window.open(`https://wa.me/qr/F4GQCVUACU7DJ1?text=${encodeURIComponent(msg)}`, '_blank');
         }
 
@@ -480,21 +677,6 @@
             }
             const msg = `WITHDRAW REQUEST\nUser: ${currentUser.username}\nEmail: ${currentUser.email}\nAmount: ₹${amt}\n${details}`;
             window.open(`https://wa.me/qr/F4GQCVUACU7DJ1?text=${encodeURIComponent(msg)}`, '_blank');
-        }
-
-        function joinRoom(amt, mode) {
-            if (!currentUser) return showLogin();
-            if (currentUser.balance < amt) return alert('Low balance!'), showSection('deposit');
-            if (confirm(`Join ₹${amt} ${mode} room?`)) {
-                currentUser.balance -= amt;
-                updateBalance();
-                alert(`Joined! Win up to ₹${amt * 1.8}`);
-                window.open('https://wa.me/qr/F4GQCVUACU7DJ1', '_blank');
-            }
-        }
-
-        function joinErangel(amt) {
-            joinRoom(amt, 'Erangel');
         }
     </script>
 </body>
